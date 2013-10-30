@@ -1,4 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
 $body-bg: #bdc3c7;
+$font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height:                                        45px;
 $navbar-default-bg: #3498db;
 $navbar-default-link-color: white;
 @import 'bootstrap'; 
+
+.center {
+     text-align: center;
+}
+
+.navbar-brand {
+     font-weight: bold;
+}
