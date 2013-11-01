@@ -47,6 +47,10 @@ class PinsController < ApplicationController
     end
   end
 
+   def pin_params
+      params.require(:pin).permit(:description, :image)
+    end
+
   # DELETE /pins/1
   # DELETE /pins/1.json
   def destroy

@@ -1,11 +1,12 @@
 class PicsController < ApplicationController
   before_action :set_pic, only: [:show, :edit, :update, :destroy]
+  before_action :set_pic, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
 
   # GET /pics
   # GET /pics.json
   def index
-    @pics = pic.all 
+    @pics = Pic.all 
   end
 
   # GET /pics/1
